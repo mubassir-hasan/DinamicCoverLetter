@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cover Letter</title>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="notice" class="box generalbox">
+<h5>
+Dear Employer
+</h5>
+    <p>I am responding to your job post on BD Jobs for Software Engineer.
+    <br/>
+I believe that my qualifications and work exprience in Object oriented programming, MVC, JQuery, AJAX and desiging web interface makes me ideal candidate for your vacancy.
+I am confident that I can make significant contribution to <b>Company</b> by providing my excellent software development skill to <b>Company</b> and it's client. As a .Net Developer my skill foucsed on .NET Core, 3 Tire Architechare, Complex LINQ query and interactive frontend design etc.
+<br/>
+I believe that I can be a great asset to <b>Company</b> and I would be most grateful for the opportunity of an interview, where we can discuss <b>Company</b> goal, the job requirements and also my ability to meet them.
+<br/>
+Please find enclosed with this letter my CV for your consideration. In closing, I thank you for your time and I look forward to hearing from you.
+<br/>
+In sincerely
+<br/>
+Mubassir Hasan
+<br/>
+60/10/c Dhalpur 
+<br/>
+ Jattrabari, Dhaka-1209. 
+ <br/>
+Cell: 01764966768, 01680803492
+<br/>
+<a href="https://thebookofmubassir.com">Blog</a> || <a href="https://mubassir-hasan.github.io/resume/">Portfolio</a>
+</p>
+</div>
+<script>
+$(function () {
+    function replaceNodeText() {
+        if (this.nodeType === 3) {
+            this.nodeValue = this.nodeValue.split(replaceNodeText.find).join(replaceNodeText.replace);
+        } else {
+            $(this).contents().each(replaceNodeText);
+        }
+    }
+    replaceNodeText.find = "Company";
+    replaceNodeText.replace = "my test";
+    $("#notice").contents().each(replaceNodeText);
+});
+</script>
+</body>
+</html>
