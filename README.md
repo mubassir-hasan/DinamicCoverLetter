@@ -1,1 +1,1 @@
-# DinamicCoverLetter
+# DynamicCoverLetter
